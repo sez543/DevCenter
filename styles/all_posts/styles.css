@@ -1,0 +1,151 @@
+.padding {
+  max-width: 1600px;
+  margin: auto;
+}
+
+#a {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-width: 100%;
+}
+
+#list {
+  margin: 30px 20px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  position: relative;
+}
+
+.drop {
+  margin-bottom: 10px;
+}
+
+.md-card-content {
+  padding: 0;
+}
+
+.md-card-content:last-of-type {
+  padding-bottom: 0px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.scroll {
+  overflow: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+.side {
+  height: 1000px;
+  width: 100%;
+  padding: 20px;
+}
+
+.tile {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.main_content {
+  display: flex;
+}
+
+.tile .date {
+  float: right;
+  padding: 10px;
+}
+
+.md-card .md-caption:first-of-type {
+  margin-bottom: 20px;
+}
+
+.md-card .md-title {
+  margin-bottom: 5px;
+}
+
+.md-card-media {
+  padding: 20px;
+  width: 150px;
+}
+
+a .md-title {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 650px) {
+  .cont {
+    flex-direction: column;
+  }
+  .main_content {
+    justify-content: space-between;
+  }
+  .main_content .md-card-media {
+    width: 175px;
+  }
+  .md-card .date.md-caption:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#advanced {
+  left: -16px !important;
+  top: 8px !important;
+}
+
+.form-control {
+  color: unset !important;
+}
+
+.md-form.select-wrapper {
+  margin: 0;
+  margin-top: 11px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.sub-loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.select-dropdown li.disabled,
+.select-dropdown li.disabled > span,
+.select-dropdown li.optgroup {
+  color: #fff !important;
+}
+
+.md-layout-item:nth-last-of-type(2) .select-wrapper li:first-of-type {
+  background-color: #4285f4 !important;
+}
+
+.md-field.md-theme-default .md-helper-text,
+.md-field.md-theme-default .md-count,
+.md-field.md-theme-default label {
+  color: unset;
+}

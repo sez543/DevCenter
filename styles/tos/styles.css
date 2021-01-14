@@ -1,0 +1,14 @@
+.padding {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.md-content {
+  overflow: auto;
+  max-width: 100%;
+}
+
+.tos_card {
+  padding: 30px;
+  margin: 40px 20px;
+}

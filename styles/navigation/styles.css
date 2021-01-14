@@ -1,0 +1,211 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+
+.md-avatar {
+  margin: 15px;
+}
+
+.user_button .md-ripple {
+  padding: 8px;
+  padding-bottom: 16px;
+}
+
+.md-list-item-content {
+  justify-content: center;
+}
+
+.user_button {
+  width: 100%;
+  height: auto;
+}
+
+.first .md-button .md-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first .md-button {
+  height: auto;
+  width: 90%;
+  margin: 0;
+}
+
+.first .md-button .md-ripple {
+  padding: 16px 8px;
+}
+
+.second .md-button {
+  height: auto;
+  width: 90%;
+  margin: 0;
+}
+
+.second .md-button .md-ripple {
+  padding: 16px 8px;
+}
+
+/*
+Messages
+*/
+
+.second .md-avatar,
+.second .msg_content {
+  display: inline-block;
+}
+
+.second .md-ripple {
+  display: contents;
+}
+
+.second {
+  max-width: none !important;
+}
+
+.second .md-button {
+  width: 100%;
+}
+
+.second .md-button-content {
+  padding: 10px;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  display: none;
+}
+
+.dropdown-menu .md-button .md-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-menu .md-button {
+  height: auto;
+}
+
+.dropdown-menu .md-button .md-ripple {
+  padding: 16px 8px;
+}
+
+@media only screen and (max-width: 850px) {
+  #menu {
+    display: inline-block;
+  }
+  .dynamic {
+    display: none;
+  }
+}
+
+/*? Spinner */
+.orbit-spinner,
+.orbit-spinner * {
+  box-sizing: border-box;
+}
+
+.orbit-spinner {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  perspective: 800px;
+}
+
+.orbit-spinner .orbit {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.orbit-spinner .orbit:nth-child(1) {
+  left: 0%;
+  top: 0%;
+  animation: orbit-spinner-orbit-one-animation 1200ms linear infinite;
+  border-bottom: 3px solid #448aff;
+}
+
+.orbit-spinner .orbit:nth-child(2) {
+  right: 0%;
+  top: 0%;
+  animation: orbit-spinner-orbit-two-animation 1200ms linear infinite;
+  border-right: 3px solid #448aff;
+}
+
+.orbit-spinner .orbit:nth-child(3) {
+  right: 0%;
+  bottom: 0%;
+  animation: orbit-spinner-orbit-three-animation 1200ms linear infinite;
+  border-top: 3px solid #448aff;
+}
+
+@keyframes orbit-spinner-orbit-one-animation {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes orbit-spinner-orbit-two-animation {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes orbit-spinner-orbit-three-animation {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+/*? End of spinner */
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.second .md-list {
+  padding-top: 0;
+}
+
+.second .md-list .md-button:first-of-type {
+  margin: 5px;
+  width: auto;
+}
+
+.second .md-list .md-button:first-of-type .md-button-content {
+  padding-left: 10px;
+}

@@ -1,0 +1,150 @@
+.padding {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.md-content {
+  overflow: auto;
+  max-width: 100%;
+}
+
+.padding .content {
+  margin: 10px;
+}
+
+.img-split {
+  flex: 0.6;
+  max-width: 500px;
+  position: relative;
+}
+
+.card-up {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.contacts {
+  margin: 3px;
+  text-align: right;
+}
+
+.contacts .md-icon-button {
+  margin: 0 4px;
+}
+
+.contacts .md-icon-button:first-of-type {
+  margin-left: 0;
+}
+
+.contacts .md-icon-button:last-of-type {
+  margin-right: 0;
+}
+
+.contacts .md-button + .md-button {
+  margin-left: 0;
+}
+
+.detail-split {
+  flex: 1;
+}
+
+.detail-split .card-body .md-button {
+  display: block;
+  margin: 18px 8px;
+  height: 50px;
+}
+
+.upper {
+  display: flex;
+}
+
+.nav-item a:hover,
+.dropdown-menu a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1px) {
+  .container {
+    max-width: unset;
+  }
+}
+
+.tile {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.tile .md-button + .md-button {
+  margin-left: 8px;
+}
+
+.main_content {
+  display: flex;
+}
+
+.tile .date {
+  float: right;
+  padding: 10px;
+}
+
+.md-card .md-caption:first-of-type {
+  margin-bottom: 20px;
+}
+
+.md-card .md-title {
+  margin-bottom: 5px;
+}
+
+.md-card-media {
+  padding: 20px;
+  width: 150px;
+}
+
+a .md-title {
+  text-decoration: underline;
+}
+
+.md-card .md-caption:first-of-type {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .cont {
+    flex-direction: column;
+  }
+  .main_content {
+    justify-content: space-between;
+  }
+  .main_content .md-card-media {
+    width: 175px;
+  }
+  .md-card .date.md-caption:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .upper {
+    flex-direction: column;
+  }
+  .img-split {
+    flex: auto;
+    max-width: none;
+  }
+  .detail-split {
+    flex: auto;
+  }
+  .detail-split .card-up {
+    display: none;
+  }
+}

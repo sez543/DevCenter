@@ -1,0 +1,23 @@
+.padding {
+  width: 100%;
+}
+
+.text-danger {
+  margin-bottom: 24px;
+  text-align: left;
+  display: none;
+}
+
+.md-content {
+  overflow: auto;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form_card {
+  margin: 100px auto;
+  max-width: 800px;
+}

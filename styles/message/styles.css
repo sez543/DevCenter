@@ -1,0 +1,52 @@
+.padding {
+  max-width: 1600px;
+  margin: auto;
+}
+
+#a {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-width: 100%;
+}
+
+#page {
+  margin: 30px 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.form-control {
+  color: unset;
+}
+
+.form-control:focus {
+  color: unset;
+}
+
+hr {
+  margin-bottom: 0.5rem !important;
+}
+
+.chat-body {
+  min-width: 300px;
+}
+
+.box {
+  max-width: 60%;
+}
+
+.me img,
+.other_user img {
+  height: 100px;
+}
+
+.me {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.other_user {
+  justify-content: flex-start;
+  text-align: left;
+}

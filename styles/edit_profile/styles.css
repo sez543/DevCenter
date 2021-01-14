@@ -1,0 +1,38 @@
+.padding {
+  max-width: 1600px;
+  margin: auto;
+}
+
+#a {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-width: 100%;
+}
+
+#page {
+  margin: 30px 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+#submit {
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+}
+
+.testimonial-card .avatar {
+  margin-top: 0;
+  margin-right: 20px !important;
+}
+
+.md-has-file {
+  margin-top: 25px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
