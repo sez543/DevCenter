@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navigation_row {
+  position: sticky;
+  top: 0;
+}
+
+.md-content {
+  overflow: auto;
+  max-width: 100%;
+}
+
+.padding {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.md-card {
+  margin: 30px 20px;
+}
+
+#first {
+  padding: 200px 0;
+  background-image: url(./pexels-pixabay-373076.jpg);
+  background-position-y: 63%;
+  background-size: cover;
+}
+
+#first .title {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.title {
+  font-size: 3em;
+  padding: 30px;
+}
+
+#second {
+  display: flex;
+  flex-direction: row;
+}
